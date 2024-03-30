@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Não abra é perigoso confia</title>
+ <link rel="stylesheet" href="style.css">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <center>
+<!-- Este é um link vazio com um atributo 'download' configurado para baixar uma imagem. -->
+<a href="" id="link" download="myselfie.png"></a>
+
+<!-- Este é um cabeçalho de nível 1 (<h1>) que parece estar incompleto e tem uma imagem dentro. -->
+<h1>Não abra é perigoso confia
+    <!-- Aqui está a imagem dentro do cabeçalho. -->
+    <img id="logo_img" src="maxresdefault.jpg">
+</h1>
+<br>
+
+<!-- Este é um cabeçalho de nível 4 (<h4>) com estilo de cor definido. -->
+<h4 style="color: rgb(211, 44, 211);">Pressione permitir assim que o pop-up for exibido.Depois de dar um comando de voz</h4>
+
+<!-- Esta é uma seção de formulário com um grupo de formulários. -->
+<div class="form-group">
+    <!-- Este é um cabeçalho de nível 3 (<h3>) com um texto instrucional. -->
+    <h3>Diga "foto" para tirar sua foto</h3>
+
+    <!-- Este é um rótulo para um campo de entrada de texto. -->
+    <label>Sua saída de voz :</label>
+
+    <!-- Esta é uma área de texto para exibir a saída de voz -->
+    <textarea class="form-control" id="textbox" readonly="true"></textarea>
+</div>
+        <!-- Este é um botão com classe "btn btn-danger" que, quando clicado, chama a função "start()". -->
+        <button class="btn btn-danger" onclick="start()">voadora</button>
+
+        <!-- Aqui está um parágrafo de texto explicando ao usuário o que fazer. -->
+        <p> Aperte o botão se não quiser ser congelado</p>
+        <labe>sua webcam o cego : </labe>
+
+        <!-- Aqui está uma div com id "camera" onde a webcam será exibida. -->
+        <div id="camera"></div>
+        <br>
+        <label>Sua camera está ligada seu lerdo: </label>
+        
+        <!-- Esta é uma div com id "result" onde a selfie capturada será exibida. -->
+        <div id="result"></div>
+   
+    </center>
+  </div>  
+  <script src="main.js"></script>
+</body>
+</html>
